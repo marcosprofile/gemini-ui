@@ -4,7 +4,7 @@ h2 {
   color: var(--secondary);
   width: max-content;
 
-  &.gradiente {
+  &.gradient {
     background-image: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;

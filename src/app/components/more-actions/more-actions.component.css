@@ -1,0 +1,20 @@
+button {
+  font-size: var(--size-lg);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  span {
+    font-family: var(--icon);
+  }
+
+  &:hover {
+    background-color: var(--premium-tag);
+  }
+}

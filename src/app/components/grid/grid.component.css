@@ -3,4 +3,5 @@ section {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-md);
+  height: 100%;
 }

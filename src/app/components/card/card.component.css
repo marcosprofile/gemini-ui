@@ -8,6 +8,10 @@ div {
   padding: var(--spacing-md);
   line-height: 156%;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &:hover {
     background-color: var(--primary-hover);
@@ -17,8 +21,9 @@ div {
     font-family: var(--icon);
     width: 28px;
     height: 28px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--radius-full);
     background-color: var(--background);
     font-size: var(--size-xl);

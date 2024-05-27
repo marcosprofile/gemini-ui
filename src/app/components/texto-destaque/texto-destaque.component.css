@@ -3,6 +3,7 @@ h2 {
   font-weight: var(--regular);
   color: var(--secondary);
   width: max-content;
+  letter-spacing: -2px;
 
   &.gradient {
     background-image: var(--gradient);

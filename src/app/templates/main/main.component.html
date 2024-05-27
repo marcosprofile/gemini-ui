@@ -1,4 +1,20 @@
 <main>
   <app-header />
-  <app-texto-destaque texto="Gemini UI" cor="gradient" />
+  <section class="home">
+    <section>
+      <div class="container">
+        <app-container>
+          <app-texto-destaque texto="Olá, Marcos Ferreira" cor="gradient" />
+          <app-texto-destaque texto="Posso ajudar?" />
+        </app-container>
+        <app-grid>
+          <app-card texto="As melhores praias do..." icone="explore" />
+          <app-card texto="Guia para iniciantes" icone="draw" />
+          <app-card texto="Novos esportes" icone="sports_soccer" />
+          <app-card texto="Conceitos complexos" icone="lightbulb" />
+        </app-grid>
+      </div>
+      <app-input placeholder="Digite uma pergunta ou comando" />
+    </section>
+  </section>
 </main>

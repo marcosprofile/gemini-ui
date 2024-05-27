@@ -14,6 +14,7 @@ import { MoreActionsComponent } from '../components/more-actions/more-actions.co
 import { LinkBtnComponent } from '../components/link-btn/link-btn.component';
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { HeaderComponent } from '../components/header/header.component';
+import { LocationComponent } from '../components/location/location.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HeaderComponent } from '../components/header/header.component';
     MoreActionsComponent,
     LinkBtnComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    LocationComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { HeaderComponent } from '../components/header/header.component';
     MoreActionsComponent,
     LinkBtnComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    LocationComponent
   ]
 })
 export class SharedModule { }

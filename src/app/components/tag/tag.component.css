@@ -1,0 +1,16 @@
+div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--size-sm);
+  font-weight: var(--regular);
+  background-color: var(--premium-tag);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--premium-tag-hover);
+  }
+}

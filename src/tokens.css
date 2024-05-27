@@ -1,0 +1,47 @@
+:root {
+  /* COLORS */
+  --background: #131314;
+  --btn: #1A1A1C;
+  --btn-hover: #282A2C;
+  --primary: #1E1F20;
+  --primary-hover: #333537;
+  --premium-tag: #37393B;
+  --premium-tag-hover: #47494A;
+  --secondary: #444746;
+  --grey: #BDC1C6;
+  --white: #FFFFFF;
+  --red: #C5221F;
+  --blue: #A8C7FA;
+  --gradient: linear-gradient(90deg, #4883F0 0%, #D46678 60.15%);
+
+  /* RADIUS */
+  --radius-sm: .375rem;
+  --radius-md: .75rem;
+  --radius-lg: 1rem;
+  --radius-full: 75rem;
+
+  /* SPACINGS */
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-md: .75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+  --spacing-2xl: 2rem;
+  --spacing-3xl: 2.5rem;
+  --spacing-4xl: 3rem;
+
+  /* TYPOGRAPH */
+  --text: Inter, sans-serif;
+  --icon: 'Material Icons';
+
+  --size-xs: .688rem;
+  --size-sm: .75rem;
+  --size-md: .875rem;
+  --size-lg: 1rem;
+  --size-xl: 1.25rem;
+  --size-4xl: 3.5rem;
+
+  --regular: 500;
+  --semibold: 600;
+  --bold: 800;
+}

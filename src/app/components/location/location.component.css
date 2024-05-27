@@ -1,0 +1,41 @@
+section {
+  padding: var(--spacing-md);
+  font-size: var(--size-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+
+  .local {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--white);
+
+    span {
+      font-family: var(--icon);
+      font-size: var(--size-sm);
+      color: var(--grey);
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs) var(--spacing-sm);
+    padding: 0 var(--spacing-lg);
+    color: var(--blue);
+
+    span {
+      width: .25rem;
+      height: .25rem;
+      border-radius: var(--radius-full);
+      background-color: var(--grey);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--blue);
+    }
+  }
+}

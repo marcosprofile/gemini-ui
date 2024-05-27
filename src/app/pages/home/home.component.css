@@ -1,5 +1,5 @@
 section {
   display: grid;
-  grid-template-columns: 284px 1fr;
+  grid-template-columns: 300px 1fr;
   height: 100%;
 }

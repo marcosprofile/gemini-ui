@@ -23,6 +23,16 @@ main {
         gap: var(--spacing-4xl);
         height: 100%;
       }
+
+      p {
+        font-size: var(--size-sm);
+        text-align: center;
+        color: var(--grey);
+
+        span {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

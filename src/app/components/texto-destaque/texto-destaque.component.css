@@ -4,6 +4,7 @@ h2 {
   color: var(--secondary);
   width: max-content;
   letter-spacing: -2px;
+  line-height: normal;
 
   &.gradient {
     background-image: var(--gradient);

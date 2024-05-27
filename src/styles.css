@@ -13,4 +13,5 @@ body {
   color: var(--white);
   height: 100vh;
   overflow: hidden;
+  line-height: 156%;
 }

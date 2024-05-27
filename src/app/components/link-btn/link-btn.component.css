@@ -30,6 +30,7 @@ a {
 .menu {
   width: 40px;
   height: 40px;
+  justify-content: center;
 
   .icone {
     font-size: var(--size-2xl);

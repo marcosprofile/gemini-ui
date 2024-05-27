@@ -1,0 +1,34 @@
+div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  padding: 0 var(--spacing-xl);
+  border-radius: var(--radius-full);
+  background-color: var(--primary);
+
+  &:focus-within {
+    background-color: var(--btn-hover);
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: var(--size-lg);
+    color: var(--white);
+    padding: var(--spacing-xl) 0;
+
+    &::placeholder {
+      color: var(--grey);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  span {
+    font-family: var(--icon);
+    font-size: var(--size-xl);
+  }
+}

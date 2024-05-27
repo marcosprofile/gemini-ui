@@ -1,0 +1,29 @@
+div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: var(--radius-md);
+  background-color: var(--primary);
+  font-size: var(--size-lg);
+  padding: var(--spacing-md);
+  line-height: 156%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+
+  span {
+    font-family: var(--icon);
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-full);
+    background-color: var(--background);
+    font-size: var(--size-xl);
+    position: absolute;
+    bottom: .75rem;
+    right: .75rem;
+  }
+}

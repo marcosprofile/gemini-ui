@@ -41,8 +41,23 @@ header {
     z-index: 1;
     transition: all .3s ease;
 
-    div:nth-child(1) {
-      margin-bottom: var(--spacing-2xl);
+    .scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: var(--spacing-md);
+      height: 100vh;
+      overflow-y: auto;
+
+      app-link-btn {
+        width: 100%;
+      }
+      padding: var(--spacing-lg) 0;
+    }
+
+    .separator {
+      height: 100%;
+      min-height: 64px;
     }
 
     &.closed {
@@ -60,10 +75,6 @@ header {
       to {
         left: 0;
       }
-    }
-
-    .separator {
-      height: 100%;
     }
   }
 }

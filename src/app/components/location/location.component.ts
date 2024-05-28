@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './location.component.css'
 })
 export class LocationComponent {
-  @Input() local: string = 'Jardim Canadá, Mauá - SP, Brasil'
+  @Input() locale: string = 'Avenida Paulista, São Paulo - SP, Brasil'
 }

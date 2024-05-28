@@ -1,11 +1,11 @@
 button {
-  font-size: var(--size-lg);
+  font-size: var(--size-xl);
   background-color: transparent;
   border: none;
   border-radius: var(--radius-full);
   color: var(--white);
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: grid;
   place-items: center;
   cursor: pointer;

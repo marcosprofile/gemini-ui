@@ -6,8 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './link-btn.component.css'
 })
 export class LinkBtnComponent {
-  @Input() link: string = '#'
-  @Input() icone: string = 'chat'
-  @Input() texto: string = ''
-  @Input() classe: string = ''
+  @Input() icon: string = 'chat'
+  @Input() text: string = ''
+  @Input() type: string = ''
 }

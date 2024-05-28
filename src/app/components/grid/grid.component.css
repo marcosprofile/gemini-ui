@@ -5,3 +5,10 @@ section {
   gap: var(--spacing-md);
   height: 100%;
 }
+
+@media (max-width: 975px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

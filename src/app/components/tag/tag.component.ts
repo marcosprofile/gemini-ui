@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tag.component.css'
 })
 export class TagComponent {
-  @Input() texto: string = ''
+  @Input() text: string = 'Testar o Gemini Advanced'
 }

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 
 /* COMPONENTS */
-import { TextoDestaqueComponent } from '../components/texto-destaque/texto-destaque.component';
+import { TextComponent } from '../components/text/text.component';
 import { TagComponent } from '../components/tag/tag.component';
 import { CardComponent } from '../components/card/card.component';
 import { GridComponent } from '../components/grid/grid.component';
@@ -19,7 +19,7 @@ import { LocationComponent } from '../components/location/location.component';
 
 @NgModule({
   declarations: [
-    TextoDestaqueComponent,
+    TextComponent,
     TagComponent,
     CardComponent,
     GridComponent,
@@ -36,7 +36,7 @@ import { LocationComponent } from '../components/location/location.component';
     SharedRoutingModule
   ],
   exports: [
-    TextoDestaqueComponent,
+    TextComponent,
     TagComponent,
     CardComponent,
     GridComponent,

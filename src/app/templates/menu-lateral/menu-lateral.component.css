@@ -3,6 +3,28 @@
   flex-direction: column;
   gap: var(--spacing-xl);
   height: 100%;
+  width: 280px;
+  transition: all .2s ease;
+
+  &.closed {
+    width: 44px;
+    animation-duration: 2s;
+    animation-name: slidein;
+
+    .recent, .actions {
+      display: none !important;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 44px;
+    }
+  }
 
   .recent {
     display: flex;

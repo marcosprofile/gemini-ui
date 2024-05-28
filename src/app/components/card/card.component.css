@@ -32,3 +32,10 @@ div {
     right: .75rem;
   }
 }
+
+@media (max-width: 975px) {
+  div {
+    width: 100%;
+    height: 128px;
+  }
+}

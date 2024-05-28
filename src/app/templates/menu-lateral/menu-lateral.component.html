@@ -1,35 +1,20 @@
 <app-sidebar>
-  <app-link-btn classe="menu" icone="menu" texto="" />
-
-  <section class="container">
-    <app-link-btn classe="new-chat" icone="add" texto="Nova conversa" />
-
+  <app-link-btn type="menu" icon="menu" (click)="menu()" />
+  <section #menuElement class="container closed">
+    <app-link-btn type="new-chat" icon="add" text="Nova conversa" />
     <div class="recent">
       Recentes
       <div class="chat">
-        <app-link-btn texto="Esta é minha primeira conversa no gemini">
-          <app-more-actions />
-        </app-link-btn>
-        <app-link-btn texto="Esta é minha segunda conversa no gemini">
-          <app-more-actions />
-        </app-link-btn>
-        <app-link-btn texto="Esta é minha terceira conversa no gemini">
-          <app-more-actions />
-        </app-link-btn>
-        <app-link-btn texto="Esta é minha quarta conversa no gemini">
-          <app-more-actions />
-        </app-link-btn>
-        <app-link-btn texto="Esta é minha quinta conversa no gemini">
-          <app-more-actions />
-        </app-link-btn>
-        <app-link-btn icone="keyboard_arrow_down" texto="Mostrar mais" />
+        @for (chat of chats; track chat.id) {
+          <app-link-btn text="{{ chat.text }}" type="{{ chat.class }}" />
+        }
+        <app-link-btn icon="keyboard_arrow_down" text="Mostrar mais" />
       </div>
     </div>
-
     <div class="actions">
-      <app-link-btn classe="point" icone="contact_support" texto="Ajuda" />
-      <app-link-btn icone="history" texto="Atividade" />
-      <app-link-btn icone="settings" texto="Configurações" />
+      @for (action of actions; track action.id) {
+        <app-link-btn icon="{{ action.icon }}" text="{{ action.text }}" type="{{ action.class }}" />
+      }
       <app-location />
     </div>
   </section>

@@ -14,7 +14,8 @@ main {
       display: flex;
       flex-direction: column;
       gap: var(--spacing-sm);
-      width: 860px;
+      width: 100%%;
+      max-width: 860px;
       height: 100%;
 
       .container {
@@ -31,7 +32,18 @@ main {
 
         span {
           text-decoration: underline;
+          cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .home {
+      section {
+        width: 100%;
       }
     }
   }

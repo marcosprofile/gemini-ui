@@ -1,10 +1,11 @@
 div {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
-  padding: 0 var(--spacing-xl);
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing-md) 0 var(--spacing-xl);
   border-radius: var(--radius-full);
   background-color: var(--primary);
+  width: 100%;
 
   &:focus-within {
     background-color: var(--btn-hover);
@@ -28,7 +29,24 @@ div {
   }
 
   span {
+    min-width: 3.375rem;
+    height: 3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--icon);
     font-size: var(--size-xl);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--premium-tag);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    font-size: var(--size-md) !important;
   }
 }

@@ -17,11 +17,84 @@ header {
       font-family: var(--icon);
       font-size: var(--size-2xl);
     }
+
+    &.btn-mobile {
+      display: none;
+    }
   }
 
-  nav {
+  div {
     display: flex;
     align-items: center;
     gap: var(--spacing-xl);
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    height: 100vh;
+    background-color: var(--primary);
+    padding: var(--spacing-lg);
+    width: 85%;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    z-index: 1;
+    transition: all .3s ease;
+
+    &.closed {
+      left: 0;
+      animation-duration: 3s;
+      animation-name: menu;
+      box-shadow: 0 0 0 1000px rgb(0, 0, 0, .5);
+    }
+
+    @keyframes menu {
+      from {
+        left: -100vw;
+      }
+
+      to {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    button {
+      font-size: var(--size-lg);
+      display: none;
+
+      &.btn-mobile {
+        display: flex;
+      }
+
+      span {
+        font-size: var(--size-2xl);
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+
+      button {
+        display: flex;
+        padding: var(--spacing-md);
+
+        span {
+          font-size: var(--size-xl);
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 }

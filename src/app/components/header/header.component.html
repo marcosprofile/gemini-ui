@@ -3,8 +3,22 @@
     Gemini
     <span>arrow_drop_down</span>
   </button>
-  <nav>
+  <button class="btn-mobile" (click)="abrirMenu()">
+    <span>menu</span>
+  </button>
+  <div>
     <app-tag />
     <img src="assets/user.png" alt="User">
+  </div>
+  <nav class="mobile">
+    <div>
+      Recentes
+      <button (click)="fecharMenu()">
+        <span>close</span>
+      </button>
+    </div>
+    @for (chat of chats; track chat.id) {
+      <app-link-btn text="{{ chat.text }}" />
+    }
   </nav>
 </header>

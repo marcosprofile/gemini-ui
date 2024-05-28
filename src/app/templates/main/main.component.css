@@ -4,6 +4,7 @@ main {
   gap: var(--spacing-3xl);
   padding: var(--spacing-xl);
   height: 100%;
+  overflow: auto;
 
   .home {
     display: flex;

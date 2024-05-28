@@ -1,10 +1,10 @@
 <header>
+  <button class="btn-mobile" (click)="abrirMenu()">
+    <span>menu</span>
+  </button>
   <button>
     Gemini
     <span>arrow_drop_down</span>
-  </button>
-  <button class="btn-mobile" (click)="abrirMenu()">
-    <span>menu</span>
   </button>
   <div>
     <app-tag />
@@ -27,6 +27,7 @@
       @for (action of actions; track action.id) {
         <app-link-btn icon="{{ action.icon }}" text="{{ action.text }}" type="{{ action.class }}" />
       }
+      <app-tag />
       <app-location />
     </div>
   </nav>

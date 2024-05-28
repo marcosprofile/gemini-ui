@@ -10,15 +10,22 @@
     <app-tag />
     <img src="assets/user.png" alt="User">
   </div>
-  <nav class="mobile">
+  <nav class="mobile closed">
     <div>
-      Recentes
+      <app-link-btn type="new-chat" icon="add" text="Nova conversa" />
       <button (click)="fecharMenu()">
         <span>close</span>
       </button>
     </div>
+    Recentes
     @for (chat of chats; track chat.id) {
       <app-link-btn text="{{ chat.text }}" />
     }
+    <app-link-btn icon="keyboard_arrow_down" text="Mostrar mais" />
+    <div class="separator"></div>
+    @for (action of actions; track action.id) {
+      <app-link-btn icon="{{ action.icon }}" text="{{ action.text }}" type="{{ action.class }}" />
+    }
+    <app-location />
   </nav>
 </header>

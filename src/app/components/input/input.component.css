@@ -46,7 +46,17 @@ div {
 }
 
 @media (max-width: 768px) {
-  input {
-    font-size: var(--size-md) !important;
+  div {
+    gap: var(--spacing-xs);
+
+    input {
+      font-size: var(--size-md) !important;
+    }
+
+    span {
+      width: 3rem;
+      min-width: unset !important;
+      height: auto;
+    }
   }
 }

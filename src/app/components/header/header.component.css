@@ -61,8 +61,7 @@ header {
 
     &.closed {
       left: 0;
-      animation-duration: 3s;
-      animation-name: menu;
+      animation: menu 3s ease;
       box-shadow: 0 0 0 1000px rgb(0, 0, 0, .5);
     }
 

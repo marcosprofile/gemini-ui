@@ -8,15 +8,30 @@
 
   &.closed {
     width: 44px;
-    animation-duration: 2s;
-    animation-name: slidein;
+    animation: slidein 2s ease;
 
-    .recent, app-location {
+    .recent {
       display: none !important;
+    }
+
+    ::ng-deep app-location {
+      display: none !important;
+    }
+
+    ::ng-deep .link-btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
     }
 
     ::ng-deep .texto {
       display: none;
+    }
+
+    ::ng-deep div.marker {
+      display: none !important;
     }
   }
 

@@ -11,6 +11,7 @@
   width: 100%;
   height: 36px;
   cursor: pointer;
+  position: relative;
 
   app-more-actions {
     display: none;

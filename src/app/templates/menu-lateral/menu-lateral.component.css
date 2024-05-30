@@ -11,8 +11,12 @@
     animation-duration: 2s;
     animation-name: slidein;
 
-    .recent, .actions {
+    .recent, app-location {
       display: none !important;
+    }
+
+    ::ng-deep .texto {
+      display: none;
     }
   }
 
@@ -43,6 +47,8 @@
   .actions {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     gap: var(--spacing-xs);
+    height: 100%;
   }
 }
